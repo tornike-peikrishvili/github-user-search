@@ -1,0 +1,134 @@
+.searchBtn {
+    height: 50px;
+    width: 106px;
+    border-radius: 10px;
+    background-color: #0079FF;
+    border-style: none;
+    outline: none;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;    
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.searchBtn:hover {
+    background-color: #60ABFF;
+    transition: 0.4s;
+}
+
+
+.searchInput {
+    width: 450px;
+    outline: none;
+    border-style: none;
+    font-family: 'Space Mono';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #222731;
+    caret-color: #0079FF;
+}
+
+.searchInput::placeholder { 
+    color:#4B6A9B;
+    font-family: 'Space Mono';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.searchLogo {
+    height: 22px;
+    width: 22px;
+}
+
+.searchFrom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    width: 730px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 6px 15px -8px rgba(0,0,0,0.77);
+}   
+
+#light .searchFrom,#light .searchFrom .searchInput {
+    background-color: #1E2A47;
+    color: #FFFFFF;
+}
+
+#light .searchFrom .searchInput.searchInput::placeholder {
+    color: #FFFFFF;
+}
+
+.noResult {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #F74646;
+    
+}
+
+@media only screen and (max-width: 768px) {
+ 
+
+    .searchFrom {
+        max-width: 573px;  
+        max-height: 69px;
+    }
+
+    .searchLogo {
+        max-height: 21.159425735473633px;
+        max-width: 21.217361450195312px;  
+    }
+
+    .searchInput {
+        max-width: 380px;
+    }
+
+    .searchInput::placeholder {
+        font-size: 18px;
+    }
+
+    .searchBtn {
+        max-height: 50px;
+        max-width: 106px;
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 414px){
+
+    .searchFrom {
+        max-height: 60px;
+        max-width: 327px;
+    }
+
+    .searchLogo {
+        max-height: 17.632854461669922px;
+        max-width: 17.681135177612305px;
+    }
+
+    .searchInput {
+        max-width: 185px;
+    }
+
+    .searchInput::placeholder {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .searchBtn {
+        max-height: 46px;
+        max-width: 84px;
+        font-size: 14px;
+    }
+}

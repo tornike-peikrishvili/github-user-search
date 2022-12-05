@@ -1,0 +1,36 @@
+.statsItem {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.itemTxt {
+    font-family: 'Space Mono';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: #4B6A9B;
+}
+
+.itemValue {
+    font-family: 'Space Mono';
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #2B3442;
+}
+
+#light .itemTxt,#light .itemValue {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 375px){
+
+}
